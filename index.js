@@ -15,7 +15,7 @@ app.post('/new-message', (req, res) => {
 
     axios.post('https://api.telegram.org/bot1585744368:AAHvT28IMI9VltL9mHZS7iZXn2XvfmNcYRA/sendMessage', {
         chat_id: message.chat.id,
-        text: 'Hi my name is Alfred. How may I help you?'
+        text: 'Hi my name is Alfred. I\'m currently doing home stuff for my boss but you can leave your message.'
     }).then((response) => {
         console.log('Message posted.');
         res.end('OK.');
